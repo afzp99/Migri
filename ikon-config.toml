@@ -1,0 +1,31 @@
+# Database configurations for allocating databases for the app (run 'ikon app config' to apply changes)
+# Assigned database connection info is available via host.Databases in the app. Use 'ikon app db' commands to manage databases.
+# Format: "name:type" or "name:type:tier" - valid types: postgres - valid tiers: shared, dedicated-small
+# Examples: "mydb:postgres", "mydb:postgres:dedicated-small"
+Databases = []
+
+# Endpoint configurations for exposing the app externally (assigned port numbers and public URLs are available via host.Endpoints in the app)
+# Format: "name:protocol" - valid protocols: http, https, tls, tcp
+# Examples: "api:https", "webhooks:http", "gameserver:tcp"
+Endpoints = []
+
+# Activation configuration for the app (app activation is separate from deployment)
+[Activation]
+# Whether to stop all active sessions of the app when a version of the app is activated
+StopSessions = false
+
+# Authentication configuration for the app frontend
+[Auth]
+# Whether the frontend requires authentication before connection to the app is established
+Enabled = false
+# Available methods: google, facebook, apple, microsoft, linkedin, github, email, guest
+Methods = ["google", "facebook", "apple"]
+# If non-empty, only allow users with email addresses from these domains to authenticate (e.g. ["mycompany.com"])
+DomainAllowlist = []
+
+# Target information for deployment (automatically configured with 'ikon app config')
+[Target]
+OrganisationId = "69c6a417b5271eca6986815f"
+SpaceId = "69c6a8e5b5271eca6986a4a1"
+ChannelId = "69c6a8e7b5271eca6986a4d0"
+Name = "Migri"

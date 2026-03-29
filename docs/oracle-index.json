@@ -1,0 +1,497 @@
+{
+  "guides": [
+    {
+      "id": "app-structure",
+      "title": "App Structure",
+      "keywords": [
+        "app file structure",
+        "session identity",
+        "client parameters",
+        "partial class",
+        "global usings",
+        "lifecycle",
+        "host services",
+        "navigation",
+        "background work",
+        "client functions",
+        "messages",
+        "minimal app template",
+        "viewport layout",
+        "auto-scroll",
+        "QR code",
+        "join URL",
+        "multi-user session",
+        "invite link"
+      ],
+      "file": "docs/guides/app-structure.md",
+      "sizeBytes": 12717,
+      "alsoInclude": []
+    },
+    {
+      "id": "app-api-reference",
+      "title": "App API Reference",
+      "keywords": [
+        "IApp",
+        "host services",
+        "server API",
+        "navigation",
+        "session",
+        "common utilities"
+      ],
+      "file": "docs/guides/app-api-reference.md",
+      "sizeBytes": 99878,
+      "alsoInclude": []
+    },
+    {
+      "id": "reactive-state",
+      "title": "Reactive State",
+      "keywords": [
+        "reactive",
+        "client reactive",
+        "user reactive",
+        "persistent reactive",
+        "reactive scope",
+        "value mutation"
+      ],
+      "file": "docs/guides/reactive-state.md",
+      "sizeBytes": 9825,
+      "alsoInclude": [
+        "app-structure",
+        "ui-components"
+      ]
+    },
+    {
+      "id": "ui-components",
+      "title": "UI Components",
+      "keywords": [
+        "layout",
+        "overlays",
+        "inputs",
+        "display",
+        "navigation",
+        "drag-and-drop",
+        "text",
+        "button",
+        "dialog",
+        "tabs",
+        "accordion",
+        "scroll area",
+        "toast",
+        "popover",
+        "chat interface",
+        "message bubbles"
+      ],
+      "file": "docs/guides/ui-components.md",
+      "sizeBytes": 13472,
+      "alsoInclude": [
+        "app-structure"
+      ]
+    },
+    {
+      "id": "ui-api-reference",
+      "title": "UI API Reference",
+      "keywords": [
+        "parallax",
+        "UI components API",
+        "method signatures",
+        "component parameters",
+        "props"
+      ],
+      "file": "docs/guides/ui-api-reference.md",
+      "sizeBytes": 95778,
+      "alsoInclude": []
+    },
+    {
+      "id": "styling-and-motion",
+      "title": "Styling \u0026 Motion",
+      "keywords": [
+        "crosswind",
+        "tailwind",
+        "theme constants",
+        "style arrays",
+        "motion",
+        "animation",
+        "UI guidelines",
+        "theme customization"
+      ],
+      "file": "docs/guides/styling-and-motion.md",
+      "sizeBytes": 6902,
+      "alsoInclude": [
+        "ui-components",
+        "app-structure",
+        "motion-reference"
+      ]
+    },
+    {
+      "id": "styling-guide",
+      "title": "Crosswind Styling Guide",
+      "keywords": [
+        "crosswind guide",
+        "UI design patterns",
+        "common pitfalls",
+        "sophisticated UI",
+        "layout patterns",
+        "gradient",
+        "overlay",
+        "CRT",
+        "scanline"
+      ],
+      "file": "docs/guides/styling-guide.md",
+      "sizeBytes": 28015,
+      "alsoInclude": [
+        "styling-and-motion"
+      ]
+    },
+    {
+      "id": "motion-reference",
+      "title": "Motion \u0026 Animation Reference",
+      "keywords": [
+        "motion spec",
+        "keyframe",
+        "animation",
+        "timing",
+        "staggered text",
+        "3D transform",
+        "filter animation",
+        "animatable properties",
+        "motion syntax grammar"
+      ],
+      "file": "docs/guides/motion-reference.md",
+      "sizeBytes": 25948,
+      "alsoInclude": [
+        "styling-and-motion"
+      ]
+    },
+    {
+      "id": "tailwind-reference",
+      "title": "Tailwind Utility Reference",
+      "keywords": [
+        "tailwind spec",
+        "utility classes",
+        "layout",
+        "flexbox",
+        "grid",
+        "spacing",
+        "typography",
+        "backgrounds",
+        "borders",
+        "effects",
+        "shadows",
+        "transitions"
+      ],
+      "file": "docs/guides/tailwind-reference.md",
+      "sizeBytes": 67642,
+      "alsoInclude": []
+    },
+    {
+      "id": "emergence",
+      "title": "Emergence",
+      "keywords": [
+        "emergence",
+        "emerge run",
+        "structured output",
+        "json",
+        "tools",
+        "agent",
+        "bestof",
+        "mapreduce",
+        "taskgraph",
+        "patterns",
+        "cancellation",
+        "timeout"
+      ],
+      "file": "docs/guides/emergence.md",
+      "sizeBytes": 35873,
+      "alsoInclude": [
+        "app-structure",
+        "ai-models"
+      ]
+    },
+    {
+      "id": "emergence-patterns",
+      "title": "Emergence Patterns",
+      "keywords": [
+        "mapreduce",
+        "taskgraph",
+        "treesearch",
+        "tree of thought",
+        "solver critic",
+        "debate",
+        "refine",
+        "plan and execute",
+        "router",
+        "ensemble",
+        "swarm",
+        "advanced patterns"
+      ],
+      "file": "docs/guides/emergence-patterns.md",
+      "sizeBytes": 28293,
+      "alsoInclude": [
+        "emergence"
+      ]
+    },
+    {
+      "id": "ai-models",
+      "title": "AI Models \u0026 LLM",
+      "keywords": [
+        "LLM model",
+        "model selection",
+        "Claude",
+        "Gemini",
+        "GPT",
+        "Grok",
+        "model enum",
+        "KernelContext",
+        "AI connection"
+      ],
+      "file": "docs/guides/ai-models.md",
+      "sizeBytes": 15477,
+      "alsoInclude": []
+    },
+    {
+      "id": "ai-image",
+      "title": "AI Image Generation",
+      "keywords": [
+        "image generation",
+        "ImageGenerator",
+        "AI image",
+        "photo",
+        "generate image",
+        "ImageGeneratorConfig"
+      ],
+      "file": "docs/guides/ai-image.md",
+      "sizeBytes": 3307,
+      "alsoInclude": [
+        "app-structure",
+        "emergence"
+      ]
+    },
+    {
+      "id": "ai-speech-and-audio",
+      "title": "AI Speech \u0026 Audio",
+      "keywords": [
+        "speech",
+        "TTS",
+        "STT",
+        "voice",
+        "transcribe",
+        "whisper",
+        "sound effect",
+        "SpeechGenerator",
+        "SpeechRecognizer",
+        "SoundEffectGenerator"
+      ],
+      "file": "docs/guides/ai-speech-and-audio.md",
+      "sizeBytes": 13931,
+      "alsoInclude": [
+        "app-structure",
+        "emergence"
+      ]
+    },
+    {
+      "id": "ai-video",
+      "title": "AI Video",
+      "keywords": [
+        "video generation",
+        "video enhancement",
+        "AI video",
+        "VideoGenerator",
+        "VideoEnhancer"
+      ],
+      "file": "docs/guides/ai-video.md",
+      "sizeBytes": 5868,
+      "alsoInclude": [
+        "app-structure",
+        "emergence"
+      ]
+    },
+    {
+      "id": "ai-web-and-data",
+      "title": "AI Web \u0026 Data",
+      "keywords": [
+        "web search",
+        "scrape",
+        "crawl",
+        "classify",
+        "OCR",
+        "embedding",
+        "vector",
+        "retrieve",
+        "rerank",
+        "file convert",
+        "WebSearcher",
+        "EmbeddingGenerator"
+      ],
+      "file": "docs/guides/ai-web-and-data.md",
+      "sizeBytes": 22050,
+      "alsoInclude": [
+        "emergence"
+      ]
+    },
+    {
+      "id": "ai-advanced",
+      "title": "AI Advanced",
+      "keywords": [
+        "database AI",
+        "vector store",
+        "AI policy",
+        "storage"
+      ],
+      "file": "docs/guides/ai-advanced.md",
+      "sizeBytes": 5600,
+      "alsoInclude": [
+        "emergence"
+      ]
+    },
+    {
+      "id": "audio-video",
+      "title": "Audio \u0026 Video",
+      "keywords": [
+        "audio",
+        "video",
+        "capture",
+        "speech",
+        "stream",
+        "effects",
+        "reverb",
+        "delay",
+        "mixer",
+        "synthesizer",
+        "oscillator",
+        "filter"
+      ],
+      "file": "docs/guides/audio-video.md",
+      "sizeBytes": 23063,
+      "alsoInclude": []
+    },
+    {
+      "id": "asset-system",
+      "title": "Asset System",
+      "keywords": [
+        "asset",
+        "cloud file",
+        "local file",
+        "cloud json",
+        "storage",
+        "metadata",
+        "URI",
+        "optimistic concurrency"
+      ],
+      "file": "docs/guides/asset-system.md",
+      "sizeBytes": 19680,
+      "alsoInclude": []
+    },
+    {
+      "id": "endpoints-databases",
+      "title": "Endpoints \u0026 Databases",
+      "keywords": [
+        "endpoints",
+        "HTTP",
+        "HTTPS",
+        "WebSocket",
+        "databases",
+        "PostgreSQL"
+      ],
+      "file": "docs/guides/endpoints-databases.md",
+      "sizeBytes": 30891,
+      "alsoInclude": []
+    },
+    {
+      "id": "function-registry",
+      "title": "Function Registry",
+      "keywords": [
+        "function registry",
+        "registration",
+        "attribute",
+        "visibility",
+        "LLM tools",
+        "callable functions"
+      ],
+      "file": "docs/guides/function-registry.md",
+      "sizeBytes": 16588,
+      "alsoInclude": []
+    },
+    {
+      "id": "logging",
+      "title": "Logging",
+      "keywords": [
+        "log",
+        "logging",
+        "debug",
+        "warning",
+        "error",
+        "diagnostics"
+      ],
+      "file": "docs/guides/logging.md",
+      "sizeBytes": 219,
+      "alsoInclude": []
+    },
+    {
+      "id": "pipelines",
+      "title": "Pipelines",
+      "keywords": [
+        "pipeline",
+        "background processing",
+        "transform",
+        "processor",
+        "scheduled",
+        "cron"
+      ],
+      "file": "docs/guides/pipelines.md",
+      "sizeBytes": 1115,
+      "alsoInclude": []
+    },
+    {
+      "id": "pipelines-reference",
+      "title": "Pipelines Reference",
+      "keywords": [
+        "pipeline API",
+        "transform",
+        "processor",
+        "pipeline guide"
+      ],
+      "file": "docs/guides/pipelines-reference.md",
+      "sizeBytes": 63966,
+      "alsoInclude": []
+    },
+    {
+      "id": "frontend-fundamentals",
+      "title": "Frontend \u0026 Custom Components",
+      "keywords": [
+        "frontend",
+        "SDK",
+        "auth",
+        "connection",
+        "i18n",
+        "styling",
+        "query params",
+        "custom UI component",
+        "module",
+        "resolver",
+        "React"
+      ],
+      "file": "docs/guides/frontend-fundamentals.md",
+      "sizeBytes": 13422,
+      "alsoInclude": [
+        "ui-components"
+      ]
+    },
+    {
+      "id": "config-and-cli",
+      "title": "Config \u0026 CLI",
+      "keywords": [
+        "ikon-config.toml",
+        "CLI commands",
+        "build",
+        "deploy",
+        "run",
+        "auth",
+        "activation",
+        "targets"
+      ],
+      "file": "docs/guides/config-and-cli.md",
+      "sizeBytes": 4355,
+      "alsoInclude": []
+    }
+  ]
+}

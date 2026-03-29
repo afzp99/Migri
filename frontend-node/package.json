@@ -1,0 +1,37 @@
+{
+  "name": "ikon-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@ikonai/sdk": "^1.0.41",
+    "@ikonai/sdk-libopus": "^1.0.41",
+    "@ikonai/sdk-react-ui": "^1.0.41",
+    "@ikonai/sdk-react-ui-rive": "^1.0.41",
+    "@ikonai/sdk-react-ui-standard": "^1.0.41",
+    "@ikonai/sdk-ui": "^1.0.41",
+    "@simplewebauthn/browser": "^13.2.2",
+    "pdfjs-dist": "^4.10.38",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
+  "devDependencies": {
+    "@eslint-react/eslint-plugin": "^2.3.13",
+    "@eslint/js": "^9.39.2",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-basic-ssl": "^2.1.0",
+    "@vitejs/plugin-react": "^5.1.2",
+    "rollup-plugin-visualizer": "^5.14.0",
+    "terser": "^5.39.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.49.0",
+    "vite": "^7.3.0"
+  }
+}

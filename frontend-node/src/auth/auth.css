@@ -1,0 +1,272 @@
+:root {
+  --ikon-auth-bg: #050711;
+  --ikon-auth-container-bg: rgba(255, 255, 255, 0.03);
+  --ikon-auth-container-border: rgba(255, 255, 255, 0.1);
+  --ikon-auth-title-gradient: linear-gradient(135deg, #6f8bff 0%, #6fe3ff 50%, #ff6fb7 100%);
+  --ikon-auth-text-primary: #ffffff;
+  --ikon-auth-text-secondary: rgba(255, 255, 255, 0.7);
+  --ikon-auth-error-color: #ff8585;
+  --ikon-auth-success-color: #6fe3ff;
+  --ikon-auth-input-bg: rgba(255, 255, 255, 0.05);
+  --ikon-auth-input-border: rgba(255, 255, 255, 0.15);
+  --ikon-auth-input-focus-border: #6f8bff;
+  --ikon-auth-button-primary-bg: #6f8bff;
+  --ikon-auth-button-primary-text: #ffffff;
+  --ikon-auth-divider-color: rgba(255, 255, 255, 0.2);
+}
+
+.ikon-auth-screen {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--ikon-auth-bg);
+  font-family: 'Space Grotesk', 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ikon-auth-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 2rem;
+  max-width: 420px;
+  width: 100%;
+  background: var(--ikon-auth-container-bg);
+  border: 1px solid var(--ikon-auth-container-border);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+}
+
+.ikon-auth-logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1.5rem;
+  object-fit: contain;
+}
+
+.ikon-auth-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  background: var(--ikon-auth-title-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+}
+
+.ikon-auth-subtitle {
+  font-size: 1rem;
+  color: var(--ikon-auth-text-secondary);
+  margin: 0 0 2rem;
+  text-align: center;
+}
+
+.ikon-auth-error {
+  background: rgba(255, 133, 133, 0.15);
+  border: 1px solid rgba(255, 133, 133, 0.4);
+  color: var(--ikon-auth-error-color);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.ikon-auth-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.ikon-auth-login-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.2s;
+  width: 100%;
+  font-family: inherit;
+}
+
+.ikon-auth-login-button:hover:not(:disabled) {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.ikon-auth-login-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.ikon-auth-login-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.ikon-auth-divider {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 1.5rem 0;
+  gap: 1rem;
+}
+
+.ikon-auth-divider::before,
+.ikon-auth-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--ikon-auth-divider-color);
+}
+
+.ikon-auth-divider span {
+  color: var(--ikon-auth-text-secondary);
+  font-size: 0.875rem;
+  text-transform: lowercase;
+}
+
+.ikon-auth-email-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.ikon-auth-email-input {
+  padding: 12px 16px;
+  border: 1px solid var(--ikon-auth-input-border);
+  border-radius: 8px;
+  font-size: 16px;
+  background: var(--ikon-auth-input-bg);
+  color: var(--ikon-auth-text-primary);
+  transition: border-color 0.2s;
+  font-family: inherit;
+}
+
+.ikon-auth-email-input:focus {
+  outline: none;
+  border-color: var(--ikon-auth-input-focus-border);
+}
+
+.ikon-auth-email-input::placeholder {
+  color: var(--ikon-auth-text-secondary);
+}
+
+.ikon-auth-email-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  background: var(--ikon-auth-button-primary-bg);
+  color: var(--ikon-auth-button-primary-text);
+  transition: opacity 0.2s, transform 0.2s;
+  font-family: inherit;
+}
+
+.ikon-auth-email-button:hover:not(:disabled) {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.ikon-auth-email-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.ikon-auth-email-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.ikon-auth-email-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: ikon-spin 1s linear infinite;
+}
+
+.ikon-auth-email-error {
+  color: var(--ikon-auth-error-color);
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.ikon-auth-email-sent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.ikon-auth-email-sent-icon {
+  color: var(--ikon-auth-success-color);
+  margin-bottom: 0.5rem;
+}
+
+.ikon-auth-email-sent-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--ikon-auth-text-primary);
+  margin: 0;
+}
+
+.ikon-auth-email-sent-message {
+  color: var(--ikon-auth-text-secondary);
+  font-size: 0.9375rem;
+  margin: 0;
+}
+
+.ikon-auth-email-sent-message strong {
+  color: var(--ikon-auth-text-primary);
+}
+
+.ikon-auth-email-resend {
+  background: none;
+  border: none;
+  color: var(--ikon-auth-success-color);
+  cursor: pointer;
+  font-size: 0.875rem;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  font-family: inherit;
+}
+
+.ikon-auth-email-resend:hover {
+  text-decoration: underline;
+}
+
+.ikon-auth-login-button-guest {
+  background: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.ikon-auth-login-button-guest:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-color: rgba(255, 255, 255, 0.3);
+}

@@ -1,0 +1,291 @@
+.ikon-app {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #050711;
+  font-family:
+    'Space Grotesk',
+    'Inter',
+    system-ui,
+    -apple-system,
+    sans-serif;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ikon-aurora-1,
+.ikon-aurora-2 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(80px);
+  opacity: 0.8;
+}
+
+.ikon-aurora-1 {
+  background: radial-gradient(ellipse at 30% 30%, #7c6ff9 0%, transparent 50%), radial-gradient(ellipse at 70% 20%, #5fd6e1 0%, transparent 55%);
+}
+
+.ikon-aurora-2 {
+  background: radial-gradient(ellipse at 50% 70%, #ff6fb7 0%, transparent 50%), radial-gradient(ellipse at 80% 60%, #7be27d 0%, transparent 60%);
+}
+
+.ikon-hero {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.ikon-hero h1 {
+  font-size: clamp(1.5rem, 8vw, 4rem);
+  font-weight: 700;
+  margin: 0;
+  background: linear-gradient(135deg, #6f8bff 0%, #6fe3ff 50%, #ff6fb7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  white-space: nowrap;
+}
+
+.ikon-info {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  margin: 0;
+}
+
+.ikon-error {
+  color: #ff8585;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.ikon-spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  border-top-color: #6f8bff;
+  border-radius: 50%;
+  animation: ikon-spin 1s linear infinite;
+}
+
+@keyframes ikon-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ikon-reconnecting-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+  animation: ikon-fade-in 1s ease-out;
+}
+
+.ikon-connecting-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 16px;
+  z-index: 9999;
+  background: white;
+  animation: ikon-fade-in 1s ease-out;
+}
+
+.ikon-connecting-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  color: #333;
+  font-family:
+    'Space Grotesk',
+    system-ui,
+    -apple-system,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.ikon-connecting-spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  border-top-color: #333;
+  border-radius: 50%;
+  animation: ikon-spin 1s linear infinite;
+}
+
+.ikon-reconnecting-chip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  color: white;
+  font-family:
+    'Space Grotesk',
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+
+.ikon-reconnecting-chip span {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.ikon-reconnecting-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: ikon-spin 1s linear infinite;
+}
+
+.ikon-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  animation: ikon-fade-in 0.15s ease-out;
+}
+
+.ikon-modal-button {
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  background: white;
+  color: #111;
+  font-family:
+    'Space Grotesk',
+    system-ui,
+    -apple-system,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    transform 0.1s ease,
+    background 0.1s ease;
+}
+
+.ikon-modal-button:hover {
+  background: #f0f0f0;
+}
+
+.ikon-modal-button:active {
+  transform: scale(0.97);
+  background: #e5e5e5;
+}
+
+@keyframes ikon-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.ikon-toast-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding-top: 16px;
+  z-index: 9998;
+  pointer-events: none;
+}
+
+.ikon-toast-overlay-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-family:
+    'Space Grotesk',
+    system-ui,
+    -apple-system,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  pointer-events: auto;
+  cursor: pointer;
+  animation: ikon-fade-in 0.3s ease-out;
+  backdrop-filter: blur(8px);
+}
+
+.ikon-toast-overlay-chip--warn {
+  background: rgba(255, 193, 7, 0.95);
+  color: #1a1a1a;
+}
+
+.ikon-toast-overlay-chip--error {
+  background: rgba(244, 67, 54, 0.95);
+  color: white;
+}
+
+.ikon-toast-overlay-icon {
+  flex-shrink: 0;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.ikon-toast-overlay-content {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ikon-toast-overlay-component {
+  font-weight: 600;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.ikon-toast-overlay-message {
+  font-size: 14px;
+  white-space: pre-wrap;
+  max-width: 400px;
+}
