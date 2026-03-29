@@ -47,16 +47,8 @@ public class MigriApp(IApp<SessionIdentity, ClientParameters> app)
         },
         ["APP-2026-002"] = new()
         {
-            new("Passport_Elena_Sokolova.pdf", "Identity", "3.1 MB", "2026-03-24", "Verified", "file-check-2", "",
-                new() { ["Passport ID"] = "RU-7284519", ["Full Name"] = "Elena Sokolova", ["Nationality"] = "Russian Federation", ["Expiry"] = "2031-08-14" }),
-            new("Finnish_Language_Certificate_YKI.pdf", "Language", "520 KB", "2026-03-24", "Verified", "file-check-2", "",
-                new() { ["Certificate ID"] = "YKI-2025-44821", ["Level"] = "B1 (Intermediate)", ["Test Date"] = "2025-11-15", ["Score"] = "4/6" }),
-            new("Continuous_Residence_Proof.pdf", "Residence", "1.8 MB", "2026-03-25", "Under Review", "file-text", "",
-                new() { ["Municipality"] = "Helsinki", ["Registered Since"] = "2020-06-01", ["Address"] = "Mannerheimintie 12 A 4" }),
-            new("Police_Clearance_Certificate.pdf", "Background", "670 KB", "2026-03-24", "Verified", "file-check-2", "",
-                new() { ["Issuing Authority"] = "MVD Russia", ["Result"] = "No criminal record", ["Valid Until"] = "2026-09-24" }),
-            new("Income_Statements_2024_2025.pdf", "Financial", "1.2 MB", "2026-03-24", "Pending", "file-clock", "",
-                new() { ["Employer"] = "Reaktor Oy", ["Annual Income 2025"] = "€42,800", ["Tax Rate"] = "28.5%" })
+            new("Passport_Elena_Sokolova.pdf", "Identity", "3.1 MB", "2026-03-24", "Verified", "file-check-2", "/Elena_Passport.pdf",
+                new() { ["Passport ID"] = "RU-7284519", ["First Name"] = "Elena", ["Last Name"] = "Sokolova", ["Nationality"] = "Russian Federation", ["Expiry"] = "14 AUG / AUG 2031" })
         },
         ["APP-2026-003"] = new()
         {
